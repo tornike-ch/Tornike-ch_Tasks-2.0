@@ -8,6 +8,26 @@
 """
 user_number = int(input("შეიყვანეთ რიცხვი 0-დან 10-ის ჩათვლით: "))
 
+#Solution 1
+
+if user_number in (0, 1):
+    print("ამ რიცხვს არ აქვს მარტივი გამყოფი")
+elif user_number in (2, 4, 8):
+    print(2)
+elif user_number in (3, 9):
+    print(3)
+elif user_number == 6:
+    print(2, 3)
+elif user_number == 7:
+    print(7)
+elif user_number == 10:
+    print(2,5)
+else:
+    exit(1)
+
+
+#Solution 2
+
 if user_number < 0 or user_number > 10:
     print("დაფიქსირდა შეცდომა")
     exit(1)
