@@ -18,11 +18,14 @@ elif user_number in (3, 9):
     print(3)
 elif user_number == 6:
     print(2, 3)
+elif user_number == 5:
+    print(5)
 elif user_number == 7:
     print(7)
 elif user_number == 10:
     print(2,5)
 else:
+    print("არასწორი ციფრი")
     exit(1)
 
 
@@ -37,7 +40,6 @@ else:
         if user_number % number == 0:
             if number in (2, 3, 5, 7):
                 dividers.append(number)
-
     for digit in dividers:
         print(digit, end=" ")
 
