@@ -5,7 +5,7 @@ second_number = 1
 next_number = 1
 sequence = [1]
 
-if user_number > 0:
+if 0 < user_number < 20:
     for number in range(user_number):
         next_number = first_number + second_number 
         sequence.append(next_number)
