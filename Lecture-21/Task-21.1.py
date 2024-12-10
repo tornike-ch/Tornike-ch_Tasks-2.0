@@ -41,8 +41,6 @@ class Department:
         return position_count
 
 def main():
-    pass
-
     try:
         with open("Lecture-21/Departments.json", "r") as department_file:
             info = json.load(department_file)
