@@ -129,7 +129,7 @@ class Detective(Player):
             new_node = int(input(f"Invalid move. Enter a valid node to move to from {list(valid_moves.keys())} that is not occupied by another detective: "))
         if self.move(new_node):
             transport_type = valid_moves[new_node]
-            self.use_ticket(transport_type)  # Ensure ticket is used
+            self.use_ticket(transport_type)
             print(f"{self.role} moved to node {new_node} using {transport_type}")
 
     def has_valid_moves(self):
